@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.morePicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.morePicture button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  color: var(--color-font);
+  cursor: pointer;
+  padding: 0 0.25rem;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.morePicture button:hover {
+  font-size: 1.3rem;
+  color: var(--color-hover);
+  border: none;
+  border-radius: 3px;
+}
+
+:root {
+  --color-font: rgb(109, 30, 109);
+  --color-hover: rgb(197, 51, 197);
+  --color-background: rgb(155, 107, 155);
+  --font-weight: 300;
+  --font-weight-hover: 500;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--color-font);
+  padding: 2rem;
+}
+
+nav {
+  background-color: var(--color-background);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3rem;
+  font-weight: var(--font-weight);
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pictures .photo {
+  padding: 0 1rem 1rem 1rem;
+  width: 400px;
+  font-size: 1rem;
+  color: var(--color-font);
+}
+
+.pictures .photo p {
+  padding: 0.5rem;
+  font-weight: var(--font-weight);
+}
+
+.pictures .photo .photographer {
+  font-weight: var(--font-weight);
+  font-size: 1.3rem;
+}
+
+.pictures .photo .imageContainer {
+  overflow: hidden;
+  height: 40vh;
+  border-radius: 5px;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem rgba(73, 71, 71, 0.3);
+          box-shadow: 0.2rem 0.2rem 0.5rem rgba(73, 71, 71, 0.3);
+}
+
+.pictures .photo .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pictures .photo .imageContainer img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.pictures a {
+  font-size: 1rem;
+  font-weight: var(--font-weight);
+  color: var(--color-font);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pictures a:hover {
+  color: var(--color-hover);
+  font-size: 1.3rem;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.search input,
+.search button {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.25rem;
+  margin: 0.1rem;
+  border: 1.5px solid var(--color-font);
+}
+
+.search input {
+  width: 300px;
+  color: var(--color-font);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  outline: none;
+}
+
+.search input:focus {
+  border: 1.9px solid var(--color-hover);
+  border-radius: 3px;
+}
+
+.search button {
+  background-color: transparent;
+  color: var(--color-font);
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.search button:hover {
+  color: var(--color-hover);
+  border: 1.5px solid var(--color-hover);
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */

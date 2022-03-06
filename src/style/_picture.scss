@@ -3,21 +3,25 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: var(--color-font);
 
   .photo {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 2.5rem 1rem;
     width: 400px;
-    font-size: 1rem;
-    color: var(--color-font);
+    height: auto;
+    font-size: 2rem;
 
     p {
       padding: 0.5rem;
       font-weight: var(--font-weight);
+      color: var(--color-font) !important;
+      font-size: 1.75rem;
     }
 
     .photographer {
       font-weight: var(--font-weight);
-      font-size: 1.3rem;
+      color: var(--color-font);
+      font-size: 2rem;
     }
 
     .imageContainer {
@@ -40,14 +44,13 @@
   }
 
   a {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: var(--font-weight);
     color: var(--color-font);
     transition: all 0.3s ease;
 
     &:hover {
       color: var(--color-hover);
-      font-size: 1.3rem;
     }
   }
 }

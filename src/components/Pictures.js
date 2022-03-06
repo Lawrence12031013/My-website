@@ -3,7 +3,9 @@ import React from "react";
 const Photos = ({ data }) => {
   return (
     <div className="photo">
-      <p className="photographer">{data.photographer}</p>
+      <p className="photographer" style={{ color: "orangered" }}>
+        {data.photographer}
+      </p>
       <div className="imageContainer">
         <img src={data.src.large} alt="" />
       </div>

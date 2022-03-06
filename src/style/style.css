@@ -4,11 +4,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 62.5%;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--color-font);
+  font-size: 3rem;
 }
 
 ul {
@@ -31,7 +33,7 @@ ul {
 .morePicture button {
   border: none;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: var(--font-weight);
   color: var(--color-font);
   cursor: pointer;
@@ -42,7 +44,7 @@ ul {
 }
 
 .morePicture button:hover {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--color-hover);
   border: none;
   border-radius: 3px;
@@ -67,7 +69,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
   color: var(--color-font);
@@ -90,11 +92,11 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
 }
 
 nav ul li a {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -110,23 +112,27 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--color-font);
 }
 
 .pictures .photo {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 2.5rem 1rem;
   width: 400px;
-  font-size: 1rem;
-  color: var(--color-font);
+  height: auto;
+  font-size: 2rem;
 }
 
 .pictures .photo p {
   padding: 0.5rem;
   font-weight: var(--font-weight);
+  color: var(--color-font) !important;
+  font-size: 1.75rem;
 }
 
 .pictures .photo .photographer {
   font-weight: var(--font-weight);
-  font-size: 1.3rem;
+  color: var(--color-font);
+  font-size: 2rem;
 }
 
 .pictures .photo .imageContainer {
@@ -152,7 +158,7 @@ nav ul li a {
 }
 
 .pictures a {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: var(--font-weight);
   color: var(--color-font);
   -webkit-transition: all 0.3s ease;
@@ -161,7 +167,6 @@ nav ul li a {
 
 .pictures a:hover {
   color: var(--color-hover);
-  font-size: 1.3rem;
 }
 
 .search {
@@ -220,8 +225,8 @@ nav ul li a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
-          clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+  -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+          clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,23 +264,25 @@ nav ul li a {
 }
 
 .top .left .converense {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .top .left .skill {
   padding: 0.1rem;
   letter-spacing: 0.1rem;
+  font-size: 2.5rem;
 }
 
 .top .right {
   position: relative;
   margin-bottom: 8rem;
+  margin-left: 10rem;
 }
 
 .top .right .bcg {
   width: 20rem;
   height: 20rem;
-  top: 3rem;
+  top: 5rem;
   position: absolute;
   background: radial-gradient(rgba(236, 209, 174, 0.7), rgba(255, 176, 74, 0.5));
   border-radius: 50%;
@@ -295,7 +302,7 @@ nav ul li a {
 }
 
 .top .right img {
-  width: 60%;
+  width: 50%;
   height: 100%;
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
@@ -312,39 +319,161 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2rem;
+  background-image: url(../components/about/photo/pexels-photo-169573.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .slideshow .logo {
   width: 14.3%;
-  -webkit-filter: brightness(0.1);
-          filter: brightness(0.1);
 }
 
 .slideshow .logo img {
   width: 80%;
 }
 
-.slideshow .logo:nth-child(1), .slideshow .logo:nth-child(7) {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+.card-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.slideshow .logo:nth-child(4) {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+.connect {
+  text-decoration: none;
+  color: black;
 }
 
-.slideshow .fade-out {
-  opacity: 0;
-  width: 0;
+.card-light {
+  width: 300px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4rem auto;
+  border-radius: 5px;
+  font-family: sans-serif;
+  -webkit-transform: skewX(-5deg);
+          transform: skewX(-5deg);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
-.slideshow .light {
-  -webkit-filter: brightness(1.2);
-          filter: brightness(1.2);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.card-light:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+          box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+
+.card-light:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-front:hover .photo_por {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  -webkit-animation: move 3s linear;
+          animation: move 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.photo-wrap {
+  width: auto;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.photo_por {
+  width: 100%;
+  height: 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -webkit-transition: all 0.8s 0.1s ease;
+  transition: all 0.8s 0.1s ease;
+  color: var(--color-font);
+}
+
+.photo_1 {
+  background-image: url("../components/about/photo/portfolio-2-01.jpg");
+}
+
+.photo_2 {
+  background-image: url("../components/about/photo/portfolio-01.jpg");
+}
+
+.photo_3 {
+  background-image: url("../components/about/photo/portfolio-3-02.jpg");
+}
+
+.photo_4 {
+  background-image: url("../components/about/photo/portfolio-4-03.jpg");
+}
+
+.text {
+  text-align: center;
+  margin: 2rem 2rem;
+  font-size: 1.5rem;
+  color: var(--color-font);
+}
+
+.text h2 {
+  font-size: 2rem;
+}
+
+.text p {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.text :not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

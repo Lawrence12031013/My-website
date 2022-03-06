@@ -9,29 +9,28 @@
     font-size: 1rem;
     font-weight: 300;
     padding: 0.25rem;
-    margin: 0.1rem;
+    margin: 0.3rem;
     border: 1.5px solid var(--color-font);
   }
   input {
-    width: 300px;
+    width: 400px;
     color: var(--color-font);
     transition: 0.4s ease-in;
     outline: none;
   }
   input:focus {
     border: 1.9px solid var(--color-hover);
-    border-radius: 3px;
   }
   button {
+    padding: 0.25rem 0.5rem;
     background-color: transparent;
     color: var(--color-font);
     letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.4s ease-in;
+    transition: 0.1s ease-in;
   }
   button:hover {
-    color: var(--color-hover);
-    border: 1.5px solid var(--color-hover);
-    border-radius: 3px;
+    color: #fff;
+    background-color: var(--color-hover);
   }
 }

@@ -58,7 +58,7 @@ function Homepages() {
     } else {
       search(searchURL);
     }
-  }, [currentSearch]);
+  }, [currentSearch, searchURL]);
 
   return (
     <div style={{ minHeight: "100vh" }}>

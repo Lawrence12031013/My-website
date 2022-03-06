@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "../components/about/Header";
+import Skill from "../components/about/Skill";
 
 const About = () => {
   return (
-    <div style={{ minHeight: "100vh" }}>
-      <h1>Lawrence</h1>
+    <div>
+      <Header />
+      <Skill />
     </div>
   );
 };
